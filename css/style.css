@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    color: #555;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+
+header
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+  
+}
+
+.header-text {
+    position: absolute;
+    margin: 0 10%;
+    top:50%;
+}
+h1
+{
+    margin: 0 ;
+    color:#fff;
+    font-size: 400%;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn:link,
+.btn:visited    
+{
+    display: inline-block;
+    font-size: 150%;   
+    text-decoration: none;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 300px;
+
+   
+}
+
+.btn:hover   
+{
+    color: #fff;
+    background-color: #d36d14;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+
+.nav-links li
+{
+    display: inline-block;
+    font-size: 200%;
+    margin-right: 40px;
+   
+}
+
+.nav-links li a
+{
+    color: #fff;
+    font-size: 90%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(230, 126, 34, 0);
+    transition: border 0.2s;
+}
+
+.nav-links li a:hover
+{
+    border-bottom: 1px solid rgba(230, 126, 34);
+}
+
+.logo
+{
+    float:left;
+    margin-top: 10px;
+    
+}
+.nav-links
+{
+    float: right;
+    margin-top: 100px;
+}
+
+.nav-bar
+{
+    margin: 0 10%;
+}
+
+.features h2
+{
+    font-size:400%;
+}
+.features p
+{
+    font-size:200%;
+}
+
+.features-heading {
+    text-align: center;
+    margin: 0 10%;
+}
+
+
+.features-details
+{
+    margin: 0 10%;
+}
+
+.features-details h3
+{
+ font-size:300%;;   
+}
+
+.features-details p
+{
+ font-size:200%;;   
+}
+.meals {
+    list-style: none;
+    width : 100%;
+    
+}
+
+.meals-showcase {
+    margin:0;
+    float : left;
+    width : 25%;
+    overflow: hidden;
+    background-color: #000;
+    
+}
+
+.meals-showcase img
+{
+    width: 100%;
+    transform: scale(1.15);
+    transition: transform,opacity 0.2s;
+    opacity: 0.7;
+}
+
+.meals-showcase img:hover
+{
+    transform: scale(1.03);
+    opacity: 1
+}
+
+.section-meals 
+{
+    padding: 0;
+    margin: 50px 0px;
+}
+
+.mealsphoto 
+{
+width: 100%; 
+
+}
+
+.howitworks-h2
+{
+    font-size: 400%;
+    text-align: center;
+    margin: 0;
+    
+}
+.how-it-works {
+    font-size: 200%;
+    padding-right: 3%;
+    padding-top: 10%;
+   
+}
+
+.app-image {
+    float: right;
+    width: 40%;
+    height: auto;
+}
+
+.workstep
+{
+    margin-bottom: 100px;
+}
+
+.workstep div
+{
+    color:#e67e22;
+    border: 1px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size : 100%;
+    margin-right: 30px
+}
+
+
+.clear-fix
+{
+    zoom:1;
+}
+.clear-fix:after
+{
+    content: ".";
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden; 
+}
+
+.imagefromstore img {
+    height: 100px;
+    width: auto;
+}
+
+.feautures-header
+{
+  color: #e25605;   
+}
+/*
+h1:after
+{
+    display: block;
+    background-color: #e25605;
+    height: 100px;
+    color : #fff;
+    content: "After psuedo ";
+    width: 100px;
+    
+}
+*/
+.city-image
+{
+  width:100%;
+  height: auto;
+}
+.smallicon
+{
+  
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
+  color: #e25605;
+  font-size:120%;
+  line-height: 120%;
+  margin-right: 20px;
+  margin-bottom: -5px;
+}
+.city-features
+{
+  margin-bottom: 20px;
+}
+.cities
+{
+margin-left: 10px;
+
+}
+.city-features a{
+  text-decoration: none;
+  border-bottom: 1px solid #e25605;
+  padding: 2px;
+  font-size: 120%;
+  color: #e25605; 
+  transition: border-bottom 0.2s, color 0.2s;
+}
+.city-features a:hover{
+  border-bottom: 1px solid transparent;
+  color: #000; 
+}
+.testimonial-section
+{
+  margin: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../css/img/back-customers.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  color:#fff;
+  font-style: italic;
+}
+cite{
+  display: block;
+  margin-top: 20px;
+  
+}
+cite img
+{
+  border-radius: 50%;
+  height: 50px;
+  vertical-align: middle
+}
+blockquote::before
+{
+  display: block;
+  content: "\201c";
+  font-size: 400%;
+  
+}
+.testimonial-section
+{
+    font-size: 200%;
+    padding:  0 10%;
+    margin-top: 50px;
+}
+.cities-section {
+    font-size:200%;
+     padding: 0 10%;
+    margin-top: 50px;
+  
+}
+
+h2
+{
+    font-size:  200%;
+    text-align: center;
+}
+.app-image-container {
+    margin-bottom: 20px;
+}
+
+.howitworks {
+    background-color: #f4f4f4;
+
+}
+
+h2:after
+{   display: block;
+    content: "";
+    height: 3px;
+    background-color: #e25605;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+.signupbtn:link,
+.signupbtn:visited    
+{
+    display: inline-block;
+    font-size: 100%;   
+    text-decoration: none;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 5px;
+    border-radius: 200px;
+    text-align: center;
+    vertical-align: center;
+    width: 120px;
+    height: 35px;
+}
+
+.signupbtn:hover   
+{
+    color: #fff;
+    background-color: #d36d14;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.signupbtn2:link,
+.signupbtn2:visited    
+{
+    display: inline-block;
+    font-size: 100%;   
+    text-decoration: none;
+    background-color: #fff;
+    color: #e67e22;
+    padding: 5px;
+    border: 1px solid #e67e22;
+    border-radius: 200px;
+    text-align: center;
+    vertical-align: center;
+    width: 120px;
+    height: 35px;
+}
+
+.signupbtn2:hover   
+{
+    color: #000;
+    transition: border 0.2s, color 0.2s;
+}
+
+.signup{
+   padding: 0 10%;
+   background-color: #f4f4f4;
+   font-size: 150%;
+}
+.signup h2{
+    font-size: 200%;
+    margin-top: 20px;
+}
+.signupsections
+{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding:30px;
+    padding-bottom: 0;
+}
+
+.signupsections div{
+    border-bottom: 1px solid #f4f4f4;
+}
+.signupsections ul{
+    list-style: none;
+}
+.signupsections ul li{
+   margin: 10px;
+}
+.signupsections h3
+{
+    font-size: 200%;
+    text-transform: uppercase;
+   
+}
+.signupsections p
+{
+    margin-bottom: 10px;
+}
+.signupsectionspara
+{
+    font-size: 300%;
+}
+.signupsectionspara span
+{
+    font-size: 30%;
+}
+.buttondiv
+{
+   
+    margin: 10px ;
+    padding-bottom: 10px;
+}
